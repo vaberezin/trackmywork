@@ -11,7 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TrackMyWork.Identity.Data;
+using TrackMyWork.Context;
+
 
 namespace TrackMyWork.Identity
 {
@@ -30,7 +31,7 @@ namespace TrackMyWork.Identity
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection"),
-                    x => x.MigrationsAssembly("TrackMyWork.Migrations")));
+                options => options.MigrationsAssembly("TrackMyWork.Context")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();

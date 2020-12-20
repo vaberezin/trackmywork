@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TrackMyWork.Identity.Data
+namespace TrackMyWork.Context
 {
     public class ApplicationDbContext : IdentityDbContext
     {

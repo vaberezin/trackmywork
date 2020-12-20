@@ -1,11 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <BaseOutputPath>TrackMyWork.Identity\bin\</BaseOutputPath>
+    <OutputPath>..\TrackMyWork.Identity\bin\</OutputPath> 
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TrackMyWork.Context\TrackMyWork.Context.csproj" />
     <ProjectReference Include="..\TrackMyWork.Identity\TrackMyWork.Identity.csproj" />
   </ItemGroup>
 

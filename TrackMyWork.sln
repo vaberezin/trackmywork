@@ -6,10 +6,18 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMyWork.API", "TrackMyWork.API\TrackMyWork.API.csproj", "{CAB8D2F5-A5AA-4655-8DAE-2A3EA9244F7E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMyWork.UI", "TrackMyWork.UI\TrackMyWork.UI.csproj", "{20B1EBF7-6547-41ED-B7C2-622D1E77753F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CAB8D2F5-A5AA-4655-8DAE-2A3EA9244F7E} = {CAB8D2F5-A5AA-4655-8DAE-2A3EA9244F7E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMyWork.Identity", "TrackMyWork.Identity\TrackMyWork.Identity.csproj", "{AAD18187-0A0D-46B2-9D33-0A0E706C1ABF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMyWork.Identity", "TrackMyWork.Identity\TrackMyWork.Identity.csproj", "{AAD18187-0A0D-46B2-9D33-0A0E706C1ABF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMyWork.Migrations", "TrackMyWork.Migrations\TrackMyWork.Migrations.csproj", "{6B3F9D43-4CFB-4D18-A904-EAC2C0648727}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMyWork.Migrations", "TrackMyWork.Migrations\TrackMyWork.Migrations.csproj", "{6B3F9D43-4CFB-4D18-A904-EAC2C0648727}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AAD18187-0A0D-46B2-9D33-0A0E706C1ABF} = {AAD18187-0A0D-46B2-9D33-0A0E706C1ABF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMyWork.Context", "TrackMyWork.Context\TrackMyWork.Context.csproj", "{D3689DEC-5606-4A7E-A3B7-16BB79F33A49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,10 @@ Global
 		{6B3F9D43-4CFB-4D18-A904-EAC2C0648727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B3F9D43-4CFB-4D18-A904-EAC2C0648727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B3F9D43-4CFB-4D18-A904-EAC2C0648727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3689DEC-5606-4A7E-A3B7-16BB79F33A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3689DEC-5606-4A7E-A3B7-16BB79F33A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3689DEC-5606-4A7E-A3B7-16BB79F33A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3689DEC-5606-4A7E-A3B7-16BB79F33A49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

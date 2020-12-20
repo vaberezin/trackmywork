@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>aspnet-TrackMyWork.Identity-AED39A10-E8DA-468A-9DE4-A6A556F576F3</UserSecretsId>
+    <UserSecretsId>aspnet-TrackMyWork.Identity-AED39A10-E8DA-468A-9DE4-A6A556F576F3</UserSecretsId>    
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +15,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <ProjectReference Include="..\TrackMyWork.Migrations\TrackMyWork.Migrations.csproj"></ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrackMyWork.Context\TrackMyWork.Context.csproj" />
+    <ProjectReference Include="..\TrackMyWork.UI\TrackMyWork.UI.csproj" />
   </ItemGroup>
 
 </Project>

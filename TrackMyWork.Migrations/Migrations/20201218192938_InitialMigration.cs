@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace TrackMyWork.Identity.Migrations
+namespace TrackMyWork.Migrations
 {
     public partial class InitialMigration : Migration
     {

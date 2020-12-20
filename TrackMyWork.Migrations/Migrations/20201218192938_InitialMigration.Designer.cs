@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TrackMyWork.Identity.Data;
+using TrackMyWork.Context;
 
-namespace TrackMyWork.Identity.Migrations
+namespace TrackMyWork.Migrations.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20201218192938_InitialMigration")]
