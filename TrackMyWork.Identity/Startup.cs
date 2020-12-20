@@ -31,7 +31,7 @@ namespace TrackMyWork.Identity
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection"),
-                options => options.MigrationsAssembly("TrackMyWork.Context")));
+            options => options.MigrationsAssembly("TrackMyWork.Migrations")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();

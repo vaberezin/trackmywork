@@ -18,8 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TrackMyWork.Migrations\TrackMyWork.Migrations.csproj" />
     <ProjectReference Include="..\TrackMyWork.Context\TrackMyWork.Context.csproj" />
-    <ProjectReference Include="..\TrackMyWork.UI\TrackMyWork.UI.csproj" />
+    
   </ItemGroup>
 
 </Project>
