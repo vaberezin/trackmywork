@@ -6,8 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TrackMyWork.Context\TrackMyWork.Context.csproj" />
     <ProjectReference Include="..\TrackMyWork.Identity\TrackMyWork.Identity.csproj" />
+    
   </ItemGroup>
 
 </Project>
