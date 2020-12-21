@@ -34,7 +34,7 @@ namespace TrackMyWork.UI
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
             //services.AddIdentityServer()
-            //    .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();            
+            //    .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
             services.AddAuthentication()
                 .AddIdentityServerJwt();
             services.AddControllersWithViews();
@@ -52,7 +52,6 @@ namespace TrackMyWork.UI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
             else
             {

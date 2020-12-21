@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMyWork.Migrations", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMyWork.Context", "TrackMyWork.Context\TrackMyWork.Context.csproj", "{D3689DEC-5606-4A7E-A3B7-16BB79F33A49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackMyWork.DatabaseUpdater", "TrackMyWork.DatabaseUpdater\TrackMyWork.DatabaseUpdater.csproj", "{400D7784-8CC2-480F-BE12-25EF1CCC6755}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMyWork.DatabaseUpdater", "TrackMyWork.DatabaseUpdater\TrackMyWork.DatabaseUpdater.csproj", "{400D7784-8CC2-480F-BE12-25EF1CCC6755}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
